@@ -13,8 +13,8 @@ public class Repository {
 
     private static final String INSERT_INTO_ORDERS_PRODUCTS_ID_CUSTOMERS_ID_QTY = "INSERT INTO shop_schema.orders (products_id,customers_id,qty) VALUES (?,?,?);";
     private static final String SELECT_FROM_ORDERS_THREE_LAST_ORDERS = "SELECT * FROM shop_schema.orders ORDER BY id DESC LIMIT ?;";
-    private static final String SELECT_FROM_ORDERS_LAST_24H_ORDERS = "SELECT * FROM shop_schema.orders WHERE \"date\" > ? ORDER BY \"date\" desc;";
-    private static final String SELECT_FROM_ORDERS_LAST_24H_VIEW = "SELECT * FROM shop_schema.view WHERE \"date\" > ? ORDER BY \"date\" desc;";
+    private static final String SELECT_FROM_ORDERS_LAST_24H_ORDERS = "SELECT * FROM shop_schema.orders WHERE \"date\" > ? ORDER BY \"date\" DESC;";
+    private static final String SELECT_FROM_ORDERS_LAST_24H_VIEW = "SELECT * FROM shop_schema.view WHERE \"date\" > ? ORDER BY \"date\" DESC;";
     private Connection connection;
 
     public void setConnection(Connection connection) {

@@ -20,7 +20,7 @@ public class App {
         Properties props = new Properties();
         props.setProperty("user", "postgres");
         props.setProperty("password", "postgres");
-        Connection connection = null;
+        Connection connection;
         try {
             connection = DriverManager.getConnection(url, props);
             repository.setConnection(connection);
