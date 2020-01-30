@@ -1,4 +1,5 @@
 import pl.oratynski.model.Order;
+import pl.oratynski.model.View;
 import pl.oratynski.newOrder.UserOrder;
 import pl.oratynski.repository.Repository;
 
@@ -44,9 +45,15 @@ public class App {
         System.out.println();*/
 
         /**last 24h orders*/
-        System.out.println("List 24h last orders:");
+        /*System.out.println("List 24h last orders:");
         List<Order> lastOrders24h = repository.lastOrders24h();
         lastOrders24h.forEach(System.out::println);
+        System.out.println();*/
+
+        /**last 24h orders view*/
+        System.out.println("List 24h last orders in view:");
+        List<View> lastOrders24HView = repository.lastOrders24HView();
+        lastOrders24HView.forEach(System.out::println);
         System.out.println();
     }
 
