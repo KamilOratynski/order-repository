@@ -5,6 +5,7 @@ import pl.oratynski.repository.Repository;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Properties;
 
 public class App {
@@ -33,7 +34,14 @@ public class App {
 
     private static void run() throws SQLException {
         /**insert order to database*/
-        Order order = userOrder.createOrder();
-        repository.insertOrders(order);
+        /*Order order = userOrder.createOrder();
+        repository.insertOrders(order);*/
+
+        /**three last order*/
+        List<Order> lastOrders = repository.threeLastOrders(3);
+        System.out.println("Three last orders:");
+        lastOrders.forEach(System.out::println);
+        System.out.println();
     }
+
 }
