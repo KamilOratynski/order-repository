@@ -38,9 +38,15 @@ public class App {
         repository.insertOrders(order);*/
 
         /**three last order*/
+        /*System.out.println("List three last orders:");
         List<Order> lastOrders = repository.threeLastOrders(3);
-        System.out.println("Three last orders:");
         lastOrders.forEach(System.out::println);
+        System.out.println();*/
+
+        /**last 24h orders*/
+        System.out.println("List 24h last orders:");
+        List<Order> lastOrders24h = repository.lastOrders24h();
+        lastOrders24h.forEach(System.out::println);
         System.out.println();
     }
 
