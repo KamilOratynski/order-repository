@@ -2,12 +2,12 @@
 
 /** <br/>
 &nbsp;&nbsp;&nbsp;\* author Kamil Oratyński<br/>
-&nbsp;&nbsp;&nbsp;*/<br/>
+&nbsp;&nbsp;&nbsp;*/<br/><br/>
 
 Description: <br/>
 Database application with sample queries.
 
-Methods in application:
+Queries in application:
 * INSERT order
 * SELECT order ORDER BY id DESC LIMIT
 * SELECT order WHERE date ORDER BY date DESC
